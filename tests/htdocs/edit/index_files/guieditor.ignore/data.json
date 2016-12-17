@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "_local:dev/multitext",
+      "fields": {
+       "main": {
+        "src": "## multitext\n\n- markdown",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}
