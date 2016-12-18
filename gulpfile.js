@@ -20,10 +20,10 @@ gulp.task("broccoli-field-drawingboard.js", function() {
 		.pipe(plumber())
 		.pipe(browserify({}))
 		.pipe(concat('broccoli-field-drawingboard.js'))
-		.pipe(gulp.dest( './dist/' ))
+		.pipe(gulp.dest( './clientside/' ))
 		.pipe(concat('broccoli-field-drawingboard.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest( './dist/' ))
+		.pipe(gulp.dest( './clientside/' ))
 	;
 });
 

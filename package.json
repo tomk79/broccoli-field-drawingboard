@@ -2,7 +2,7 @@
   "name": "broccoli-field-drawingboard",
   "version": "0.0.0-alpha.1+nb",
   "description": "drawingboard.js plugin for broccoli-html-editor",
-  "main": "libs/main.js",
+  "main": "serverside/broccoli-field-drawingboard.js",
   "scripts": {
     "start": "gulp watch",
     "test": "mocha --ui tdd ./tests/"
