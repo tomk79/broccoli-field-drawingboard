@@ -1,12 +1,12 @@
 var express = require('express'),
 	app = express();
 var server = require('http').Server(app);
-var broccoliFieldDrawingboard = require(__dirname+'/../../libs/main.js');
+var broccoliFieldDrawingboard = require(__dirname+'/../../serverside/broccoli-field-drawingboard.js');
 
 app.use( require('body-parser')({"limit": "1024mb"}) );
 app.use( '/path/to/jquery', express.static( __dirname+'/../../node_modules/jquery/dist/' ) );
 app.use( '/path/to/broccoli-html-editor', express.static( __dirname+'/../../node_modules/broccoli-html-editor/client/dist/' ) );
-app.use( '/path/to/broccoli-field-drawingboard', express.static( __dirname+'/../../dist/' ) );
+app.use( '/path/to/broccoli-field-drawingboard', express.static( __dirname+'/../../clientside/' ) );
 app.use( '/apis/broccoli', function(req, res, next){
 
 	var Broccoli = require('broccoli-html-editor');
