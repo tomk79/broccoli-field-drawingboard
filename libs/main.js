@@ -1,5 +1,4 @@
 module.exports = function(broccoli){
-	var php = require('phpjs');
 	var utils79 = require('utils79');
 
 	/**
