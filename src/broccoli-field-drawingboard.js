@@ -33,6 +33,28 @@
 		}
 
 		/**
+		 * プレビュー用の簡易なHTMLを生成する
+		 */
+		this.mkPreviewHtml = function( fieldData, mod, callback ){
+			var cheerio = require('cheerio');
+			var rtn = {}
+			if( typeof(fieldData) === typeof({}) ){
+				rtn = fieldData;
+			}
+
+			var $ = cheerio.load('<img>', {decodeEntities: false});
+			$('img')
+				.attr({'src': rtn.src})
+				.css({
+					'max-width': '80px',
+					'max-height': '80px'
+				})
+			;
+			callback( $.html() );
+			return;
+		}// mkPreviewHtml()
+
+		/**
 		 * エディタUIを生成
 		 */
 		this.mkEditor = function( mod, data, elm, callback ){
