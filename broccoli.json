@@ -1,0 +1,11 @@
+{
+    "name": "Drawingboard Field",
+    "type": "field",
+    "backend": {
+        "require": "serverside/broccoli-field-drawingboard.js"
+    },
+    "frontend": {
+        "file" : "clientside/broccoli-field-drawingboard.min.js",
+        "function" : "window.broccoliFieldDrawingboard"
+    }
+}
